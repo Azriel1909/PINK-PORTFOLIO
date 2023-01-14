@@ -293,3 +293,15 @@ footer a:hover {
     font-size: 15px;
   }
 }
+
+@media only screen and (max-width: 290px) {
+
+  .projects-section {
+    margin: auto;
+  }
+
+  .projects-section a {
+    max-width: calc(100% - 3.4rem);
+  }
+
+}
