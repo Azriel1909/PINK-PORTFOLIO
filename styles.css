@@ -140,7 +140,7 @@ ul {
 }
 
 .project-img {
-  height: calc(100% -6.8rem);
+  height: 300px;
   width: 100%;
   object-fit: cover;
 }
@@ -149,7 +149,7 @@ ul {
 
 .btn {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   border-radius: 5px;
 }
 
@@ -164,6 +164,20 @@ ul {
 .btn-show-all:hover {
   background-color: var(--bc-accent);
   color: var(--bc-dark);
+  font-weight: bold;
+}
+
+.btn-show-cv {
+  font-size: 1rem;
+  background-color: var(--bc-semi-light1);
+  border: 2px solid var(--bc-dark);
+  margin-top: 2rem;
+  color: var(--bc-dark);
+}
+
+.btn-show-cv:hover {
+  background-color: var(--bc-dark);
+  color: var(--bc-semi-light1);
   font-weight: bold;
 }
 
@@ -187,6 +201,7 @@ ul {
 
 .contact-section a {
   color: var(--bc-dark);
+  flex-direction: column;
 }
 
 .contact-section a:hover {
@@ -195,6 +210,8 @@ ul {
 
 .contact-section i {
   font-size: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-links {
@@ -223,7 +240,7 @@ footer a:hover {
 @media only screen and (max-width: 600px) {
   /* NAV SECTION */
   .nav a {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   /* WELCOME SECTION */
@@ -241,7 +258,7 @@ footer a:hover {
   }
 
   .about-section p {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   /* PROJECTS SECTION */
@@ -259,11 +276,20 @@ footer a:hover {
   }
 
   .contact-section i {
-    font-size: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .contact-section p {
+    font-size: 15px;
   }
 
   /* BUTTONS */
   .btn {
     padding: 0.5rem 1.5rem;
+    font-size: 15px;
+  }
+
+  footer {
+    font-size: 15px;
   }
 }
