@@ -1,28 +1,25 @@
 :root {
-  /* font family */
-  --ff-montserrat:'Montserrat', sans-serif;
-  --ff-ubuntu:'Ubuntu Mono', monospace;
-  --fz-large: large;
-  --fz-small: small;
-  --fw-bold: bold;
-  --lh: 1.5;
-  /* colors */
+  --ff-ubuntu: 'Ubuntu', sans-serif;
+  --ff-ubuntu-mono: 'Ubuntu Mono', monospace;
   --bc-accent: #F65A83;
-  --bc-accent2: #f44272;
-  --bc-accent-light: #ffc4d9;
+  --bc-accent-light: #F9B5D0;
+  --bc-accent-dark: #F44272;
   --bc-dark: #090909;
-  --bc-semi-dark: #7d7d7d;
+  --bc-dark2: #393939;
   --bc-light: #FFF;
   --bc-semi-light: #EEEEEE;
+  --lh: 1.5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
 html, body {
-  font-family: var(--ff-montserrat);
+  font-family: var(--ff-ubuntu);
   line-height: var(--lh);
-}
-
-nav main {
-  display: block;
+  background-color: var(--bc-semi-light);
 }
 
 #navbar {
@@ -31,38 +28,42 @@ nav main {
   position: fixed;
   top: 0px;
   width: 300px;
-  border-right: 2px solid var(--bc-accent);
-  background-color: var(--bc-light);
-  color: var(--bc-dark);
+  border-right: 2px solid var(--bc-semi-light);
+  color: var(--bc-light);
   text-align: center;
+  background-color: var(--bc-dark);
 }
 
 #navbar a {
-  color: var(--bc-semi-dark);
   display: block;
   text-decoration: none;
   padding: 15px 20px;
   font-size: 16px;
-  color: var(--bc-dark);
-  font-size: 19px;
+  color: var(--bc-light);
+  font-size: 1rem;
 }
 
+#navbar h2 {
+  padding-top: 0.5rem;
+}
 
 .profile-img {
-  width: 200px;
+  width: 160px;
   border-radius: 50%;
+  opacity: 80%;
+  padding: 0.5rem;
 }
 
 a {
   text-decoration: none;
-  color: var(--bc-accent2);
+  color: var(--bc-accent-dark);
 }
 
 #navbar a:hover {
   background-color: var(--bc-accent);
   color: var(--bc-light);
   cursor: pointer;
-  font-weight: var(--fw-bold);
+  font-weight: bold;
 }
 
 #navbar ul {
@@ -77,42 +78,36 @@ a {
 }
 
 #main-doc {
-  padding: 10px;
+  padding: 3rem;
   position: absolute;
-  margin-left: 320px;
+  margin-left: 300px;
+  margin-right: 0px;
 }
+
 
 article {
-  text-align: justify;
-  margin-right: 30px;
-  margin-left: 10px;
-
+  padding: 1rem;
 }
 
-#navbar header {
-  font-size: var(--fz-small);
-  text-align: center;
+ul {
+  padding: 0.5rem;
 }
 
 .nav-link {
-  border-top: 2px solid var(--bc-accent);  
+  border-top: 1px solid var(--bc-dark2);  
 }
 
 h1 {
   color: var(--bc-accent);
-  font-size: 2rem;
-}
-
-h2 {
   font-size: 1.5rem;
 }
 
-ol, p {
-  font-size: 19px;
+h2 {
+  font-size: 1rem;
 }
 
-code {
-  font-family: var(--ff-ubuntu);
+ul, p {
+  font-size: 19px;
 }
 
 footer {
@@ -121,16 +116,12 @@ footer {
 
 @media (max-width: 850px) {
   #navbar {
-
   position: relative;
   width: auto;
-  background-color: var(--bc-semi-light);
   border: none;
+  
   }
 
-  .nav-link {
-    border-top: 1px solid var(--bc-dark);  
-  }
   #main-doc {
     margin-left: 0;
     width: auto;
