@@ -116,10 +116,6 @@ p a:hover,section ul a:hover {
   opacity: 50%;
 }
 
-ul a {
-
-}
-
 footer a {
   text-decoration: none;
   color: var(--bc-accent-dark);

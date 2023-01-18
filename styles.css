@@ -225,8 +225,14 @@ footer {
   background-color: var(--bc-dark);
   color: var(--bc-light);
   display: flex;
-  justify-content: space-around;
-  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.pinkhat-img {
+  width: 60px;
+  margin-left: 1rem;
 }
 
 footer a:hover {
