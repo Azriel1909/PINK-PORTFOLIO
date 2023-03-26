@@ -1,14 +1,13 @@
 :root {
-  --ff-ubuntu: 'Ubuntu', sans-serif;
-  --ff-ubuntu-mono: 'Ubuntu Mono', monospace;
+  --ff-1: 'Karla', sans-serif;
+  --ff-2: 'Ubuntu', sans-serif;
   --bc-accent: #F65A83;
   --bc-accent-light: #F9B5D0;
   --bc-dark: #090909;
   --bc-light: #FFF;
   --bc-semi-light1: #EEEEEE;
   --bc-semi-light2: #cdcdcd;
-  --bc-secondary: #9ADCFF;
-  --fz-h1: 3rem;
+  --lh: 1.5;
 }
 
 * {
@@ -17,8 +16,8 @@
 }
 
 body {
-  font-family: var(--ff-ubuntu);
-  line-height: 1.5;
+  font-family: var(--ff-1);
+  line-height: var(--lh);
 }
 
 a {
@@ -43,6 +42,7 @@ ul {
   padding-top: 1rem;
   padding-bottom: 1rem;
   z-index: 10;
+  font-family: var(--ff-2);
 }
 
 .nav-list {
@@ -52,7 +52,7 @@ ul {
 }
 
 .nav-list a:hover {
-  opacity: 50% ;
+  opacity: 50%;
 }
 
 /* WELCOME SECTION */
@@ -63,6 +63,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
   height: 100vh;
   margin-top: 3rem;
@@ -70,13 +71,15 @@ ul {
 }
 
 .welcome-section h1 {
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: var(--ff-2);
 }
 
-.welcome-section p {
+.welcome-section h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: var(--ff-2);
   color: var(--bc-accent);
-  font-family: var(--ff-ubuntu-mono);
-  font-size: 2rem;
 }
 
 /* ABOUT SECTION */
@@ -91,8 +94,10 @@ ul {
   height: 100vh;
 }
 
-.about-section h1 {
-  font-size: var(--fz-h1);
+.about-section h2, .projects-section h2, .contact-section h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: var(--ff-2);
 }
 
 .about-section p {
@@ -100,7 +105,7 @@ ul {
   padding-right: 2rem;
   padding-top: 1rem;
   text-align: center;
-  max-width: 1000px;
+  max-width: 600px;
 }
 
 /* PROJECTS SECTION */
@@ -109,6 +114,7 @@ ul {
   background-color: var(--bc-dark);
   width: 100%;
 }
+
 
 .projects-header {
   color: var(--bc-light);
@@ -150,19 +156,20 @@ ul {
 .btn {
   display: inline-block;
   padding: 0.5rem 2rem;
-  border-radius: 5px;
+  border-radius: 30px;
 }
 
 .btn-show-all {
   font-size: 1rem;
   background-color: var(--bc-dark);
-  border: 2px solid var(--bc-accent);
+  border: 2px solid var(--bc-semi-light2);
   margin-bottom: 2rem;
-  color: var(--bc-accent);
+  font-weight: bold;
+  color: var(--bc-semi-light2);
 }
 
 .btn-show-all:hover {
-  background-color: var(--bc-accent);
+  background-color: var(--bc-semi-light2);
   color: var(--bc-dark);
   font-weight: bold;
 }
@@ -186,18 +193,14 @@ ul {
 .contact-section {
   background-color: var(--bc-semi-light1);
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 1rem;
 }
 
-.contact-section h2 {
-  font-size: 3rem;
-  padding: 2rem;
-}
 
 .contact-section a {
   color: var(--bc-dark);
@@ -215,8 +218,10 @@ ul {
 }
 
 .contact-links {
-  display: flex;
-  flex-direction: column;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  gap: 1rem;
 }
 
 /* FOOTER */
@@ -224,6 +229,7 @@ ul {
 footer {
   background-color: var(--bc-dark);
   color: var(--bc-light);
+  font-family: var(--ff-2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,40 +241,36 @@ footer {
   margin-left: 1rem;
 }
 
-footer a:hover {
-  color: var(--bc-accent);
-  cursor: pointer;
-  font-weight: bold;
-}
-
 /* RESPONSIVE DESIGN */
 
 @media only screen and (max-width: 600px) {
   /* NAV SECTION */
   .nav a {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
   }
 
   /* WELCOME SECTION */
   .welcome-section h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   
-  .welcome-section p {
-    font-size: 1rem;
+  .welcome-section h2 {
+    font-size: 1.5rem;
   }
 
   /* ABOUT SECTION */
-  .about-section h1 {
+  .about-section h2 {
     font-size: 1.5rem;
   }
 
   .about-section p {
     font-size: 14px;
+    max-width: 450px;
   }
 
   /* PROJECTS SECTION */
-  .projects-header {
+  .projects-section h2 {
     font-size: 1.5rem;
   }
 
@@ -282,7 +284,7 @@ footer a:hover {
   }
 
   .contact-section i {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .contact-section p {
@@ -300,14 +302,29 @@ footer a:hover {
   }
 }
 
-@media only screen and (max-width: 290px) {
+@media only screen and (max-width: 300px) {
+
+  /* WELCOME SECTION */
+  .welcome-section h1 {
+    font-size: 1.5rem;
+  }
+  
+  .welcome-section h2 {
+    font-size: 1rem;
+  }
+
+
+  /* PROJECTS SECTION */
+  .projects-section h2 {
+    font-size: 1.5rem;
+  }
 
   .projects-section {
     margin: auto;
   }
 
   .projects-section a {
-    max-width: calc(100% - 3.4rem);
+    max-width: calc(100% - 2.5rem);
   }
 
 }
