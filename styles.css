@@ -109,6 +109,7 @@ nav img:hover {
 
 /* ABOUT SECTION */
 
+
 .about-section {
   background-image: url(img/1.jpg);
   /* object-fit: cover; */
@@ -124,6 +125,7 @@ nav img:hover {
 }
 
 .about-section .about-container {
+  z-index: 10;
   width: 90%;
   justify-content: flex-start;
   margin-bottom: 2rem;
