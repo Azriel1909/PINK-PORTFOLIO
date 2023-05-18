@@ -7,6 +7,7 @@
   --bc-dark2: #2c2c2c;
   --bc-light: #FFF;
   --bc-semi-light: #EEEEEE;
+  --c-1:  #cd4f72;
   --lh: 1.5;
 }
 
@@ -27,14 +28,14 @@ html, body {
   top: 0px;
   width: 300px;
   text-align: center;
-  background-color: var(--bc-dark);
+  background-color: var(--c-1);
 }
 
 #navbar h1 {
   color: var(--bc-light);
   font-family: var(--ff-2);
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 600;
   padding-bottom: 1rem;
 }
 
@@ -86,9 +87,6 @@ html, body {
   margin-right: 0px;
 }
 
-.nav-link {
-  border-top: 1px solid var(--bc-dark2);  
-}
 
 h2 {
   font-size: 2rem;
