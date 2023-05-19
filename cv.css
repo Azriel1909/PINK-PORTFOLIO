@@ -20,6 +20,11 @@ html, body {
   font-family: var(--ff-1);
   line-height: var(--lh);
 }
+.sec-img {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
 #navbar {
   height: 100%;
@@ -130,6 +135,7 @@ footer a {
   position: relative;
   width: auto;
   border: none;
+  height: 100vh;
   }
 
   #main-doc {
