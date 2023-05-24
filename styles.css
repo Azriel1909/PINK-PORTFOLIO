@@ -111,7 +111,7 @@ nav img:hover {
 
 
 .about-section {
-  background-image: url(https://scontent.fmex11-2.fna.fbcdn.net/v/t39.30808-6/347809257_605203524913750_8780039838808876969_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGUa4OpaXYDai8uv56VKUYGQLD6gRosYrZAsPqBGixitl_UwxuTUa5bkfvYob_N-rhwwN9j2VZI_kV9iuccjtJV&_nc_ohc=9OJww6XRv2UAX-Gy9I6&_nc_zt=23&_nc_ht=scontent.fmex11-2.fna&oh=00_AfCDqgqfFi6Mz0yzm3s3MikzcP6z6d5aix-bbfazohVcvg&oe=646CF64A);
+  background-image: url("./img/1.jpg");
   /* object-fit: cover; */
   background-repeat: no-repeat;
   background-position: center;
