@@ -267,20 +267,53 @@ nav img:hover {
 
 /* FOOTER */
 
-footer {
-  font-size: 25px;
+.footer {
   background-color: var(--bc-dark);
+  padding: 40px 0;
   color: var(--bc-light);
-  font-family: var(--ff-2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+  width: 100%;
+}
+
+.footer-col {
+  width: auto;
+  padding: 20px;
+}
+
+.footer-col h3 {
+  font-size: 1.5rem;
+  color: var(--bc-light);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.footer-col h3::before {
+  content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: var(--bc-accent);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer p {
+  font-size: 25px;
 }
 
 .cr-footer {
   font-weight: 800; 
   color: var(--bc-accent);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
 }
 
 /* RESPONSIVE DESIGN */
@@ -355,8 +388,12 @@ footer {
     font-size: 15px;
   }
 
-  footer {
-    font-size: 20px;
+  .footer {
+    font-size: 15px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
   }
 
   .contact-links {
