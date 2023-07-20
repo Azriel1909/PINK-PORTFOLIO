@@ -261,7 +261,7 @@ nav img:hover {
 .contact-links {
   padding-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(2, 3fr);
+  grid-template-columns: repeat(4, 3fr);
   gap: 1rem;
 }
 
@@ -357,6 +357,10 @@ footer {
 
   footer {
     font-size: 20px;
+  }
+
+  .contact-links {
+    grid-template-columns: repeat(2, 3fr);
   }
 }
 
