@@ -301,6 +301,14 @@ nav img:hover {
   font-size: 25px;
 }
 
+.footer-link {
+  color: var(--bc-light);
+}
+
+.footer-link:hover {
+  color: var(--bc-accent-light);
+}
+
 .cr-footer {
   font-weight: 800; 
   color: var(--bc-accent);
