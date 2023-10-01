@@ -124,8 +124,9 @@ ul {
 
 .about-section p {
   color: var(--bc-light);
-  max-width: 560px;
+  max-width: 600px;
   font-size: 17px;
+  padding-bottom: 1rem;
 }
 
 /* PROJECTS SECTION */
