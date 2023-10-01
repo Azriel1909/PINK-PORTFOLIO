@@ -99,16 +99,15 @@ ul {
 
 .about-section .about-container {
   z-index: 10;
-  width: 90%;
   border-radius: 10px;
   justify-content: flex-start;
   margin: auto;
   background: var(--bc-dark);
-  background: linear-gradient(90deg, rgba(9,9,9,1) 15%, rgba(9,9,9,0.8589636538209033) 39%, rgba(9,9,9,0) 79%);
+  background: linear-gradient(90deg, rgba(9,9,9,0.6) 0%, rgba(9,9,9,0.6) 100%);
 }
 
 .about-section .items-container {
-  width: 100%;
+  max-width: 600px;
   margin: 2rem;
 }
 
@@ -127,6 +126,7 @@ ul {
   max-width: 600px;
   font-size: 17px;
   padding-bottom: 1rem;
+  text-align: justify;
 }
 
 /* PROJECTS SECTION */
@@ -334,18 +334,14 @@ ul {
     font-size: 1.5rem;
   }
 
-  .about-section .items-container {
-    width: auto;
-    margin: 1;
-  }
-
   .about-section p {
     font-size: 14px;
     max-width: 100%;
   }
 
   .about-section .about-container {
-    background: linear-gradient(90deg, rgba(9,9,9,0.8841737378545168) 15%, rgba(9,9,9,0.6012605725884104) 39%);
+    width: 100%;
+    border-radius: 0px;
   }
 
   /* PROJECTS SECTION */

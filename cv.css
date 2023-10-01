@@ -1,8 +1,8 @@
 :root {
   --ff-1: 'Work Sans', sans-serif;
-  --bc-accent: #cd4f72;
-  --bc-dark: #090909;
-  --bc-dark2: #2c2c2c;
+  --bc-accent: #F54EA1;
+  --bc-dark:  #0d0d0d;
+  --bc-darker: #090909;
   --bc-light: #FFF;
   --lh: 1.5;
 }
