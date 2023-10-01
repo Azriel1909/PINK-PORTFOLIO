@@ -162,6 +162,7 @@ ul {
 .project-title {
   font-family: var(--ff-1);
   font-size: 16px;
+  text-transform: uppercase;
 }
 
 .project:hover {
