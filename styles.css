@@ -1,12 +1,10 @@
 :root {
-  --ff-1: 'Karla', sans-serif;
-  --ff-2: 'Ubuntu', sans-serif;
-  --bc-accent: #F65A83;
+  --ff-1: 'Work Sans', sans-serif;
+  --bc-accent: #F54EA1;
   --bc-accent-light: #F9B5D0;
-  --bc-dark: #090909;
+  --bc-dark:  #0d0d0d;
+  --bc-darker: #090909;
   --bc-light: #FFF;
-  --bc-semi-light1: #EEEEEE;
-  --bc-semi-light2: #cdcdcd;
   --lh: 1.5;
 }
 
@@ -25,10 +23,6 @@ a {
   color: white;
 }
 
-.nav a {
-  color: var(--bc-light);
-  margin: 1rem;
-}
 
 ul {
   list-style: none;
@@ -36,43 +30,25 @@ ul {
 
 /* NAV SECTION */
 
-/* LOGO */
-nav img {
-  max-width: 150px;
-}
-
-nav img:hover {
-  opacity: 50%;
-  transition: opacity 1s;
-}
-
 .nav {
-  background-color: var(--bc-dark);
-  display: flex;
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  background-color: var(--bc-darker);
+  padding: 1rem;
   font-family: var(--ff-1);
-  align-items: center;
 }
 
 .nav-list {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
 }
 
 .nav-list a {
   transition: padding 1s;
+  margin: 2rem;
+  font-size: 18px;
 }
 
 .nav-list a:hover {
-  background-color: var(--bc-dark);
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 2px;
@@ -96,8 +72,9 @@ nav img:hover {
 }
 
 .welcome-section h1 {
-  font-size: 3rem;
-  font-family: var(--ff-2);
+  font-size: 3.5rem;
+  font-family: var(--ff-1);
+  font-style: italic;
 }
 
 .welcome-section h2 {
