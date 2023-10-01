@@ -197,7 +197,7 @@ ul {
   cursor: pointer;
   transition: ease-out 0.5s;
   border: 2px solid var(--bc-light);
-  border-radius: 30px;
+  border-radius: 10px;
   box-shadow: inset 0 0 0 0 var(--bc-light);
 }
 
