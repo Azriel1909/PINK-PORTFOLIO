@@ -107,6 +107,12 @@ h3 {
   padding-top: 1rem;
 }
 
+h3::before {
+  content: "| ";
+  font-weight: 800;
+  color: var(--bc-accent);
+}
+
 ul {
   padding: 1rem;
 }
