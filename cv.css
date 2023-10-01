@@ -113,8 +113,13 @@ h3::before {
   color: var(--bc-accent);
 }
 
+li::before {
+  content: '- ';
+}
+
 ul {
-  padding: 1rem;
+  padding: 1rem 0 1rem;
+  list-style: none;
 }
 
 section ul a{
