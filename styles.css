@@ -85,7 +85,7 @@ ul {
 
 .about-section {
   /* background-image: url("./img/hero.jpg"); */
-  background-image: url("https://images.unsplash.com/photo-1559614500-75b5f1ffab7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80");
+  background-image: url("https://images.unsplash.com/photo-1539161486680-830c8f04dcb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -104,7 +104,7 @@ ul {
   justify-content: flex-start;
   margin: auto;
   background: var(--bc-dark);
-  background: linear-gradient(70deg, rgba(9,9,9,1) 10%, rgba(9,9,9,0) 80%);
+  background: linear-gradient(90deg, rgba(9,9,9,1) 15%, rgba(9,9,9,0.8589636538209033) 39%, rgba(9,9,9,0) 79%);
 }
 
 .about-section .items-container {
@@ -336,12 +336,16 @@ ul {
 
   .about-section .items-container {
     width: auto;
-    margin: 1rem;
+    margin: 1;
   }
 
   .about-section p {
     font-size: 14px;
-    max-width: 300px;
+    max-width: 100%;
+  }
+
+  .about-section .about-container {
+    background: linear-gradient(90deg, rgba(9,9,9,0.8841737378545168) 15%, rgba(9,9,9,0.6012605725884104) 39%);
   }
 
   /* PROJECTS SECTION */
