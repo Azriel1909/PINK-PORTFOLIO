@@ -1,5 +1,6 @@
 :root {
   --ff-1: 'Work Sans', sans-serif;
+  --ff-2: 'Pixelify Sans', sans-serif;
   --bc-accent: #F54EA1;
   --bc-dark:  #0d0d0d;
   --bc-darker: #090909;
@@ -301,7 +302,9 @@ ul {
 }
 
 .cr-footer {
+  font-family: var(--ff-2);
   color: var(--bc-accent);
+  font-size: 30px;
 }
 
 .row {
