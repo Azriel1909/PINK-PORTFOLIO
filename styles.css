@@ -303,6 +303,11 @@ ul {
 
 .cr-footer {
   font-family: var(--ff-2);
+  font-size: 30px;
+}
+
+.cr-footer-c {
+  font-family: var(--ff-2);
   color: var(--bc-accent);
   font-size: 30px;
 }
